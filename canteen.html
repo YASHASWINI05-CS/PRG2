@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h3, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canteen.css">
+ </head>
+<body>
+    <div>
+    <h3> WELCOME </h3>
+    <h2> MENU </h2>
+    <label for=""> dosa(rs-40)</label>
+    <input type="number" name="" id="dosa">
+    <label for=""> idli(rs-20)</label>
+    <input type="number" name="" id="idli">
+    <label for=""> ricebath(rs-50)</label>
+    <input type="number" name="" id="ricebath">
+    <label for=""> upi2(rs-30)</label>
+    <input type="number" name="" id="upi2">
+    <label for=""> poori(rs-40)</label>
+    <input type="number" name="" id="poori">
+    <label for=""> ragimuddhe(rs-20)</label>
+    <input type="number" name="" id="ragimuddhe">
+    <label for="">Yuvadupa (rs-100)</label>
+    <input type="number" name="" id="yuvadupa">
+    <label for=""> dayspecial(rs-110)</label>
+    <input type="number" name="" id="dayspecial">
+   
+    <button onclick="bill()">SUBMIT</button>
+    <p id="res">the total bill is </p>
+    </div>
+    <script>
+        function bill()
+        {
+            var idli=document.getElementById("idli").value;
+            var dosa=document.getElementById("dosa").value;
+            var upi2=document.getElementById("upi2").value;
+            var poori=document.getElementById("poori").value;
+            var ricebath=document.getElementById("ricebath").value;
+            var yuvadupa=document.getElementById("yuvadupa").value;
+            var dayspecial=document.getElementById("dayspecial").value;
+            var ragimuddhe=document.getElementById("ragimuddhe").value;
+         var total=(idli*20)+(dosa*40)+(upi2*30)+(poori*40)+(ragimuddhe*20)+(yuvadupa*100)+(dayspecial*110);
+res.innerHTML="THE BILL IS "+ total;
+alert(total);
+        
+        }
+    </script>
+</body>
+</html>

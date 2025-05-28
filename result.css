@@ -1,0 +1,21 @@
+body{
+    color: black;
+    background-color: gray;
+    text-align: center;
+    text-decoration: solid;
+
+}
+div{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    height: 400px;
+    width: 1000px;
+    background-color: black;
+    color: wheat;
+    padding: 50px;
+    
+    border:1px solid red
+    filter: drop-shadow(10px 10px 1px yellow);
+    text-shadow: 1px 1px 3px yellow;
+}
